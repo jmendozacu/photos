@@ -24,13 +24,13 @@
  * @license     http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
  */
 ?>
-<?php 
+<?php
     $store = Mage::app()->getStore();
     $code  = $store->getCode();
     $footer = Mage::getStoreConfig('legenda_setting/footer_settings', $code);
 ?>
 <div class="footer-container">
-    <div class="footer">        
+    <div class="footer">
         <?php if($footer['pre_footer_enabled']): ?>
             <?php echo $this->getLayout()->createBlock('cms/block')->setBlockId($footer['pre_footer'])->toHtml();?>
         <?php endif; ?>
@@ -44,7 +44,7 @@
                     <?php if($footer['footer_top_column_1']): ?>
                         <div class="col-sm-<?php echo $footer['footer_top_column_1_size']?>">
                             <div class="content-element">
-                                <?php 
+                                <?php
                                     $area = 'footer_top_column_1';
                                     $type = $footer[$area];
                                     if ($type == 'custom') {
@@ -59,7 +59,7 @@
                     <?php if($footer['footer_top_column_2']): ?>
                         <div class="col-sm-<?php echo $footer['footer_top_column_2_size']?>">
                             <div class="content-element">
-                                <?php 
+                                <?php
                                     $area = 'footer_top_column_2';
                                     $type = $footer[$area];
                                     if ($type == 'custom') {
@@ -74,7 +74,7 @@
                     <?php if($footer['footer_top_column_3']): ?>
                         <div class="col-sm-<?php echo $footer['footer_top_column_3_size']?>">
                             <div class="content-element">
-                                <?php 
+                                <?php
                                     $area = 'footer_top_column_3';
                                     $type = $footer[$area];
                                     if ($type == 'custom') {
@@ -89,7 +89,7 @@
                     <?php if($footer['footer_top_column_4']): ?>
                         <div class="col-sm-<?php echo $footer['footer_top_column_4_size']?>">
                             <div class="content-element">
-                                <?php 
+                                <?php
                                     $area = 'footer_top_column_4';
                                     $type = $footer[$area];
                                     if ($type == 'custom') {
@@ -104,7 +104,7 @@
                     <?php if($footer['footer_top_column_5']): ?>
                         <div class="col-sm-<?php echo $footer['footer_top_column_5_size']?>">
                             <div class="content-element">
-                                <?php 
+                                <?php
                                     $area = 'footer_top_column_5';
                                     $type = $footer[$area];
                                     if ($type == 'custom') {
@@ -133,7 +133,7 @@
                     <?php if($footer['footer_bottom_column_1']): ?>
                         <div class="col-sm-<?php echo $footer['footer_bottom_column_1_size']?>">
                             <div class="content-element">
-                                <?php 
+                                <?php
                                     $area = 'footer_bottom_column_1';
                                     $type = $footer[$area];
                                     if ($type == 'custom') {
@@ -148,7 +148,7 @@
                     <?php if($footer['footer_bottom_column_2']): ?>
                         <div class="col-sm-<?php echo $footer['footer_bottom_column_2_size']?>">
                             <div class="content-element">
-                                <?php 
+                                <?php
                                     $area = 'footer_bottom_column_2';
                                     $type = $footer[$area];
                                     if ($type == 'custom') {
@@ -163,7 +163,7 @@
                     <?php if($footer['footer_bottom_column_3']): ?>
                         <div class="col-sm-<?php echo $footer['footer_bottom_column_3_size']?>">
                             <div class="content-element">
-                                <?php 
+                                <?php
                                     $area = 'footer_bottom_column_3';
                                     $type = $footer[$area];
                                     if ($type == 'custom') {
@@ -178,7 +178,7 @@
                     <?php if($footer['footer_bottom_column_4']): ?>
                         <div class="col-sm-<?php echo $footer['footer_bottom_column_4_size']?>">
                             <div class="content-element">
-                                <?php 
+                                <?php
                                     $area = 'footer_bottom_column_4';
                                     $type = $footer[$area];
                                     if ($type == 'custom') {
@@ -193,7 +193,7 @@
                     <?php if($footer['footer_bottom_column_5']): ?>
                         <div class="col-sm-<?php echo $footer['footer_bottom_column_5_size']?>">
                             <div class="content-element">
-                                <?php 
+                                <?php
                                     $area = 'footer_bottom_column_5';
                                     $type = $footer[$area];
                                     if ($type == 'custom') {
@@ -220,9 +220,8 @@
                 <?php endif; ?>
                     <div class="row">
                         <div class="col-sm-6 text-left">
-                            <a href="<?php echo Mage::getBaseUrl(); ?>"><img src="<?php echo Mage::getDesign()->getSkinUrl($footer['copyright_logo']); ?>" class="logo-small"/></a>
                         </div>
-                        <div class="col-sm-6 text-right">							
+                        <div class="col-sm-6 text-right">
                             <address><?php echo $footer['copyright_text'] ?></address>
 							<?php echo $this->getChildHtml('store_switcher') ?>
                         </div>
