@@ -1,0 +1,45 @@
+<div class="header-wrapper header-type-1">
+<!--<div class="container">
+    <div class="menu-icon hidden-md hidden-lg"><i class="fa fa-bars"></i></div>
+</div>-->
+
+<div class="main-nav visible-md visible-lg">
+    <div class="double-border">
+        <div class="container">            
+            <div class="menu-wrapper">
+                <div class="logo-with-menu">
+                                        <h1 class="logo"><strong>Nepal Picture Library</strong><a href="http://photos.kazi270.com/" title="Nepal Picture Library"><img src="http://photos.kazi270.com/skin/frontend/smartwave/legenda/images/logosm.png" alt="Nepal Picture Library" /></a></h1>
+                                    </div>
+                <div class="menu-all-pages-container">
+                    <ul class="menu">
+                        <li>
+    <a href="http://photos.kazi270.com/" class="act">
+       <span>Home</span>
+    </a>
+</li>
+<li>
+<a href="http://photos.kazi270.com/nepal-picture-library.html" class="">Nepal Picture Library</a>
+</li>
+<li>
+<a href="http://photos.kazi270.com/peace-corps.html" class="">Peace Corps</a>
+</li>
+<li>
+    <a href="http://photos.kazi270.com/blog/" class="blog-nav">
+       <span>Fundraiser Blog</span>
+    </a>
+</li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var SW_MENU_POPUP_WIDTH = 0;
+//]]>
+</script>
