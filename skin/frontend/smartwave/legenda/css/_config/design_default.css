@@ -171,10 +171,10 @@ textarea:focus {
     color: #ffffff;
 }
 /*---Top Bar Settings---*/.header-container .top-bar {
-    background: #3fbef1;
+    background: #000000;
 }
 .header-container .top-bar .container {
-    border-color: #dbdbdb;
+    border-color: #000000;
 }
 .links li a,
 .links li.login:before, 
@@ -189,10 +189,10 @@ textarea:focus {
 .top-bar .form-language i:before,
 .top-bar .form-currency i:before,
 .top-bar li.blog:before {
-    color: #8e8e8e;
+    color: #FFFFFF;
 }
 /*---Top Bar Settings End---*//*-----Version 1.1.0 start-----*//*---Main Header Styles---*/.header-container {
-background-color: #3fbef1;
+background-color: #000000;
 }
 /*-----version 1.1.0 end-----*//*---Main Navigation Styles---*/.header-wrapper .main-nav {
     background-color: #ffffff;
@@ -229,8 +229,8 @@ background: #db2920;
 color: #ffffff;
 }
 .fixed-header {
-    background-color: #3fbef1;
-    background: url(http://photos.kazi270.com/media/smartwave/transparency/default/3.png);
+    background-color: #000000;
+    background: url(http://support.photoktm.com/media/smartwave/transparency/default/3.png);
     background-repeat: repeat;
 }
 .fixed-header .menu > li .nav-sublist-dropdown, .main-nav .menu > li .nav-sublist-dropdown,
@@ -238,8 +238,8 @@ color: #ffffff;
 /*version 1.1.0 start*/.nav-category-list > li .nav-sublist-dropdown,
 .nav-category-list > li.menu-item .nav-sublist-dropdown .nav-sublist li > a
 /*version 1.1.0 end*/ {
-    background-color: #ffffff;
-    background: url(http://photos.kazi270.com/media/smartwave/transparency/default/3.png);
+    background-color: #000000;
+    background: url(http://support.photoktm.com/media/smartwave/transparency/default/3.png);
     background-repeat: repeat;
 }
 /*---Main Navigation Styles End---*//*---Footer Top Styles Start---*/.footer-top {
