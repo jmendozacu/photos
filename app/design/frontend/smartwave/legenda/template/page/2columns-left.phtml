@@ -63,18 +63,31 @@ $bodyClass .= ' '.Mage::getStoreConfig('legenda_design/general/theme_style',$cod
     </div>
     <?php endif; ?>
     <div class="page">
-        <?php echo $this->getChildHtml('header') ?>
-        <?php echo $this->getChildHtml('breadcrumbs') ?>
+        <?php echo $this->getChildHtml('header'); ?>
+        <?php //echo $this->getChildHtml('breadcrumbs'); ?>
+		<div class="page-heading">
+	    		<div class="container">
+        			<div class="a-center">
+<?php 
+
+$title = $this->getLayout()->getBlock('head')->getTitle();
+$new_title = substr($title, ($pos = strpos($title, '-')) !== false ? $pos + 1 : 0);
+
+?>
+            			<h1 class="title"><span><?php echo $new_title; ?></span></h1>
+	    		    </div>
+		    </div>
+		</div>
         <div class="home-slider">
             <?php echo $this->getChildHtml('home_slider'); ?>
         </div>
-        <div class="main-container container col2-left-layout">
+        <div class="main-container container ">
             <div class="main row">                
-                <div class="col-main col-sm-8 <?php if(Mage::app()->getFrontController()->getRequest()->getModuleName() != 'blog'):  ?>col-md-9<?php endif; ?>">
+                <div class="col-main col-md-12 <?php if(Mage::app()->getFrontController()->getRequest()->getModuleName() != 'blog'):  ?>col-md-12<?php endif; ?>">
                     <?php echo $this->getChildHtml('global_messages') ?>
                     <?php echo $this->getChildHtml('content') ?>
                 </div>
-                <div class="col-left sidebar col-sm-4 <?php if(Mage::app()->getFrontController()->getRequest()->getModuleName() != 'blog'):  ?>col-md-3<?php endif; ?>"><?php echo $this->getChildHtml('left') ?></div>
+                
             </div>
         </div>
         <?php echo $this->getChildHtml('footer') ?>        

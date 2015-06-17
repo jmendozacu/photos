@@ -2142,6 +2142,7 @@ tr.summary-details-excluded {
 
 .show-top-panel {
   color: #cccccc;
+visibility: hidden;
   -webkit-transition: 0.2s all ease-in-out;
   -moz-transition: 0.2s all ease-in-out;
   -ms-transition: 0.2s all ease-in-out;

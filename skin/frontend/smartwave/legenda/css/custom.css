@@ -1,2 +1,25 @@
 .fancybox-skin .regular-price .price {font-size:14px;color:rgb(45, 121, 1);}
 .link-compare { display:none; }
+.cms-home .products-grid li.item { width:350px;}
+.Image_Wrapper { text-align:right; }
+.Caption_Background {background:transparent !important; }
+.Caption_Content {  padding-right: 5px;}
+.Collage .Image_Wrapper{
+    vertical-align:bottom;
+    opacity:0;
+}
+.product-img-box .more-views{
+	display:none;
+}
+.product-shop .product-pricing{
+	display:none;
+}
+.menu-item .nav-sublist-dropdown{
+	top:90px !important;
+	background-image:none !important;
+	background-color:#fff !important;
+}
+.cms-home h2 {
+    color: #e6519d;
+	font-size:25px;
+}

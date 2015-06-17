@@ -234,3 +234,33 @@
         <?php endif; ?>
     </div>
 </div>
+<script src="<?php echo  Mage::getBaseUrl('js') . 'extjs/jquery.collageCaption.js'; ?>"></script>
+<script src="<?php echo  Mage::getBaseUrl('js') . 'extjs/jquery.collagePlus.js'; ?>"></script>
+<script src="<?php echo  Mage::getBaseUrl('js') . 'extjs/jquery.removeWhitespace.js'; ?>"></script>
+<script>
+jQuery(window).load(function () {
+    jQuery(document).ready(function(){
+     collage();
+     jQuery('.Collage').collageCaption();
+ });
+});
+
+    // Here we apply the actual CollagePlus plugin
+    function collage() {
+        jQuery('.Collage').removeWhitespace().collagePlus(
+        {
+            'fadeSpeed'     : 2000,
+            'targetHeight'  : 300,
+	    'effect'          : 'effect-3',
+        }
+        );
+	jQuery('.Collage .Image_Wrapper').css("opacity", 1);
+    };
+
+var resizeTimer = null;
+jQuery(window).bind('resize', function() {
+    jQuery('.Collage .Image_Wrapper').css("opacity", 0);
+    if (resizeTimer) clearTimeout(resizeTimer);
+    resizeTimer = setTimeout(collage, 200);
+});
+</script>

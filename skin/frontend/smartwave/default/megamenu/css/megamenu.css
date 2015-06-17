@@ -1,7 +1,7 @@
 /*New Style*/
 .main-nav {
   border-top: 1px solid #dbdbdb;
-  border-bottom: 1px solid #dbdbdb;
+  border-bottom: 0px solid #dbdbdb;
   padding: 2px 0;
   position: relative; }
   .main-nav .double-border {
@@ -66,7 +66,7 @@
       display: none;
       position: absolute;
       z-index: 10000;
-      width: 200px;
+      width: 220px;
       top: 100%;
       border-bottom: 1px solid #ebebeb;
       padding: 0;
@@ -122,8 +122,8 @@
         .main-nav .menu > li .nav-sublist-dropdown .container > ul > li a {
           padding: 15px 20px;
           display: block;
-          border-left: 1px solid #dbdbdb;
-          border-right: 1px solid #dbdbdb;
+		  font-family: Arimo;
+		  text-transform: uppercase;
           border-top: 1px solid #dbdbdb;
           -webkit-box-sizing: border-box;
           -moz-box-sizing: border-box;
