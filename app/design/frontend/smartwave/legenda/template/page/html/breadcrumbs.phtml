@@ -28,7 +28,15 @@
 <div class="page-heading">
     <div class="container">
         <div class="a-center">
-            <h1 class="title"><span><?php echo $this->getLayout()->getBlock('head')->getTitle(); ?></span></h1>
+<?php 
+$title = $this->getLayout()->getBlock('head')->getTitle();
+$pos = strpos($title, '-');
+$title_top = $title;
+if ($pos){
+$title_top = substr($title, 0, ($pos = strpos($title, '-'))); 
+}
+?>
+            <h1 class="title"><span><?php echo $title_top;  ?></span></h1>
             
         </div>
     </div>

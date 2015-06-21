@@ -72,9 +72,10 @@ $bodyClass .= ' '.Mage::getStoreConfig('legenda_design/general/theme_style',$cod
 
 $title = $this->getLayout()->getBlock('head')->getTitle();
 $new_title = substr($title, ($pos = strpos($title, '-')) !== false ? $pos + 1 : 0);
+$title_top = substr($new_title, ($pos = strpos($new_title, '-')) !== false ? $pos+1 : 0);
 
 ?>
-            			<h1 class="title"><span><?php echo $new_title; ?></span></h1>
+            			<h1 class="title"><span><?php echo $title_top; ?></span></h1>
 	    		    </div>
 		    </div>
 		</div>

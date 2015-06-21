@@ -30,9 +30,6 @@
     $store = Mage::app()->getStore();
     $code  = $store->getCode();
 ?>
-    <div class="widget-title">
-        <h2><?php echo $this->__('Gallery') ?></h2>
-    </div>
          <div class="Collage">
         <?php $i=0; foreach ($_productCollection as $_product):
 $_product = Mage::getModel('catalog/product')->load($_product->getId()); ?>

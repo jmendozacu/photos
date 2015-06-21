@@ -471,6 +471,7 @@
                 <remove name="checkout.cart.coupon"/>
             </block>
         </reference>
+        <remove name="checkout.cart.shipping" />
     </checkout_cart_index>
     <checkout_onepage_index>
         <reference name="breadcrumbs">

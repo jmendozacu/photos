@@ -23,3 +23,10 @@
     color: #e6519d;
 	font-size:25px;
 }
+ .title span{
+  background-color: #ffffff; 
+  color:#f841b3;
+}
+.catalog-category-view .toolbar {
+  display:none;
+}

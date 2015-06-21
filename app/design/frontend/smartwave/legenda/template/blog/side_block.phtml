@@ -17,7 +17,7 @@
                         <?php } ?>
                         </a>
                         <a href="<?php echo $post->getAddress(); ?>" title="<?php echo $post->getTitle(); ?>"><?php echo $post->getTitle(); ?></a>
-                        <br><?php echo $this->__('by')?>&nbsp;<strong><?php echo $post->getUser() ?></strong>
+                        <br><?php echo $this->__('by')?>&nbsp;  <strong> <?php echo $post->getUser() ?></strong>
                         <br><?php echo date('d M Y', strtotime($post->getCreatedTime())) ?>
                         <div class="clearfix"></div>
                     </div>
