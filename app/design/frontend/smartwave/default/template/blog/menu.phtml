@@ -1,20 +1,3 @@
-<?php if ($this->getCategories()->count()): ?>  
-<div class="block block-blog-categories">
-    <div class="block-title">
-        <strong><span><?php echo Mage::helper('blog')->__('Blog Categories'); ?></span></strong>
-    </div>
-    <div class="block-content">
-        <?php $cats = $this->getCategories(); ?>
-        <ul class="list-arrow">
-        <?php foreach ($cats as $cat): ?>
-                    <li>
-                        <a href="<?php echo $cat->getAddress(); ?>"><?php echo $cat->getTitle(); ?></a>
-                    </li>
-        <?php endforeach; ?>
-        </ul>
-    </div>
-</div>
-<?php endif; ?>
 
 <?php if ($posts = $this->getRecent()): ?>
 <div class="block block-blog-recent">
@@ -33,7 +16,7 @@
                     }
                 ?>
                 <a href="<?php echo $post->getAddress(); ?>" ><?php echo $post->getTitle(); ?></a>
-                <br><?php echo $this->__('by')?><strong><?php echo $post->getUser() ?></strong>
+                <br><?php echo $this->__('by ')?><strong><?php echo $post->getUser() ?></strong>
                 <br><?php echo date('d M Y', strtotime($post->getCreatedTime())) ?>
                 <div class="clearfix"></div>
             </div>

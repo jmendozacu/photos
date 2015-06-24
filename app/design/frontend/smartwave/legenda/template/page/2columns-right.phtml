@@ -50,6 +50,10 @@ $bodyClass .= ' '.Mage::getStoreConfig('legenda_design/general/theme_style',$cod
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<?php echo $this->getLang() ?>" lang="<?php echo $this->getLang() ?>">
 <head>
 <?php echo $this->getChildHtml('head') ?>
+<!--?php if (Mage::registry('current_product')) : ?-->
+<meta content="<?php // echo Mage::helper('catalog/image')->init(Mage::registry('current_product'),'image');?>" />
+<meta content="<?php //echo Mage::registry('current_product')->getName();?>" />
+<!--?php endif;?-->
 </head>
 <body class="<?php echo $bodyClass ?>">
 <?php echo $this->getChildHtml('after_body_start') ?>

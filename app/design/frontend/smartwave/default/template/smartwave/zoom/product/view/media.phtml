@@ -75,7 +75,10 @@
                     ?>
                     <div class="item">
                         <?php if (Mage::getStoreConfig('zoom/image/aspect_ratio', $code)) : ?>
-                        <img src="<?php echo $this->helper('catalog/image')->init($_product, 'image',$_image->getFile())->constrainOnly(FALSE)->keepAspectRatio(TRUE)->keepFrame(FALSE)->resize(960); ?>" data-zoom-image="<?php echo $this->helper('catalog/image')->init($_product, 'image', $_image->getFile())->constrainOnly(FALSE)->keepAspectRatio(TRUE)->keepFrame(FALSE)->resize(960); ?>" title="<?php echo $this->escapeHtml($this->getImageLabel());?>" class="main-zoom-img"/>
+
+                        <img src="<?php echo $this->helper('catalog/image')->init($_product, 'thumbnail',$_image->getFile())->constrainOnly(FALSE)->keepAspectRatio(TRUE)->keepFrame(FALSE)->resize(960); ?>" 
+data-zoom-image="<?php echo $this->helper('catalog/image')->init($_product, 'thumbnail', $_image->getFile())->constrainOnly(FALSE)->keepAspectRatio(TRUE)->keepFrame(FALSE)->resize(960); ?>"
+ title="<?php echo $this->escapeHtml($this->getImageLabel());?>" class="main-zoom-img"/>
                         <?php else: ?>
                         <img src="<?php echo $helpImg->getImage($_product, $imgOpt['img_width'], $imgOpt['img_height'] , 'image', $_image->getFile()); ?>" data-zoom-image="<?php echo $helpImg->getImage($_product, $bigImgOpt['img_width'], $bigImgOpt['img_height'], 'image', $_image->getFile()); ?>" title="<?php echo $this->escapeHtml($this->getImageLabel());?>" class="main-zoom-img"/>
                         <?php endif; ?>

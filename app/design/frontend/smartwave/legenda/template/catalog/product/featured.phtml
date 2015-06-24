@@ -29,16 +29,15 @@
     $_helper = $this->helper('catalog/output');
     $store = Mage::app()->getStore();
     $code  = $store->getCode();
+    $categoryUrl = "";
 ?>
          <div class="Collage">
         <?php $i=0; foreach ($_productCollection as $_product):
+if($i++ < 7):
 $_product = Mage::getModel('catalog/product')->load($_product->getId()); ?>
-<div class='Image_Wrapper' data-caption="<a href='<?php echo $this->getAddToCartUrl($_product) ?>'><button type='button' class='btn btn-danger btn-sm'>
-  <span class='glyphicon glyphicon-shopping-cart' aria-hidden='true'></span> Add to Cart
-</button></a>">
+<div class='Image_Wrapper' data-caption="">
                 <a href="<?php echo $_product->getProductUrl() ?>" title="<?php echo $this->stripTags($_product->getName(), null, true) ?>" class=""><img src="<?php echo $this->helper('catalog/image')->init($_product, 'image')->keepFrame(FALSE)->resize(null,300) ?>" alt="<?php echo $this->stripTags($_product->getName(), null, true) ?>" height="300" /></a>
 </div>
-        <?php endforeach; ?>
-        </div>
-    </div>
+        <?php endif; 
+endforeach; ?>
 </div>

@@ -71,9 +71,19 @@ $bodyClass .= ' '.Mage::getStoreConfig('legenda_design/general/theme_style',$cod
 <?php 
 
 $title = $this->getLayout()->getBlock('head')->getTitle();
-$new_title = substr($title, ($pos = strpos($title, '-')) !== false ? $pos + 1 : 0);
-$title_top = substr($new_title, ($pos = strpos($new_title, '-')) !== false ? $pos+1 : 0);
-
+/*$new_title = substr($title, ($pos = strpos($title, '-')) !== false ? $pos + 1 : 0);
+//$title_top = substr($new_title, ($pos = strpos($new_title, '-')) !== false ? $pos+1 : 0);
+if(strlen($title) > strpos($title, '-'))
+	$title_top = substr($title, 0,($pos = strpos($title, '-')));
+else
+	$title_top = $title;
+*/
+if(strstr($title,'- Nepal Picture'))
+	$title_top = substr($title,0,(strpos($title,'- Nepal Picture')));
+elseif(strstr($title,'- Peace Corps'))
+	$title_top = substr($title,0,(strpos($title,'- Peace Corps')));
+else 
+	$title_top = $title;
 ?>
             			<h1 class="title"><span><?php echo $title_top; ?></span></h1>
 	    		    </div>

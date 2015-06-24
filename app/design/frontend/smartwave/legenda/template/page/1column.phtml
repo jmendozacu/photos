@@ -67,10 +67,12 @@ $bodyClass .= ' '.Mage::getStoreConfig('legenda_design/general/theme_style',$cod
     <?php endif; ?>
     <div class="page">
         <?php echo $this->getChildHtml('header') ?>
-        <?php echo $this->getChildHtml('breadcrumbs') ?>
+        <?php echo $this->getChildHtml('breadcrumbs'); 
+if(Mage::getSingleton('cms/page')->getIdentifier() == 'home'): ?>
         <div class="home-slider">
             <?php echo $this->getChildHtml('home_slider'); ?>
         </div>
+<?php endif; ?>
         <div class="main-container container col1-layout">
             <div class="main row">                
                 <div class="col-main col-xs-12">

@@ -30,3 +30,11 @@
 .catalog-category-view .toolbar {
   display:none;
 }
+ .zoomContainer {display: none;}
+.product-view .product-img-box .product-image-zoom img{cursor:auto;}
+.viewmore {  background-color: #e6519d;
+  padding: 10px 20px;
+}
+.viewmore a {color:#FFF !important;}
+.header-container {background-color:#FFF !important;}
+.home-slider { min-height: 500px; }

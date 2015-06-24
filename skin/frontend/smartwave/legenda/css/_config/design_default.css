@@ -9,7 +9,7 @@ body,
 .product-view .product-shop .sku_wrapper .sku {
     font-family: Arimo;
     font-size: 13px;
-    color: #6f6f6f;
+    color: #4f4e4e;
 }
 .postWrapper .post-info .posted-in a,
 .breadcrumbs li strong,
@@ -17,7 +17,7 @@ body,
 .old-price .price,
 .product-view .product-shop .link-wishlist:after, 
 .product-view .product-shop .link-compare:after {
-    color: #6f6f6f;
+    color: #4f4e4e;
 }
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6, .title,
 .product-name a,
@@ -62,10 +62,10 @@ a,
 .product-view .box-up-sell .slider-viewport .owl-theme .owl-controls .owl-buttons div,
 .checkout-progress li,
 .shopping-cart .cart-sum > a {
-    color: #6f6f6f;
+    color: #f841b3;
 }
 .checkout-progress li {
-    border-color: #6f6f6f;
+    border-color: #f841b3;
 }
 .side-area-icon i:before, 
 .menu-icon i:before {
@@ -137,7 +137,7 @@ textarea:focus {
 }
 .toolbar .sorter .grid,
 .toolbar .sorter .list {
-    background-color: #6f6f6f;
+    background-color: #4f4e4e;
 }
 .toolbar .sorter .grid.active,
 .toolbar .sorter .list.active,
@@ -156,7 +156,7 @@ textarea:focus {
 .button,
 .link-wishlist, 
 .link-compare {
-    color: #000000;
+    color: #4f4e4e;
     
 }
 .button.filled,
@@ -229,9 +229,7 @@ background: #f841b3;
 color: #ffffff;
 }
 .fixed-header {
-    background-color: #000000;
-    background: url(http://support.photoktm.com/media/smartwave/transparency/default/3.png);
-    background-repeat: repeat;
+    background-color: #FFFFFF;
 }
 .fixed-header .menu > li .nav-sublist-dropdown, .main-nav .menu > li .nav-sublist-dropdown,
 .fixed-header .menu > li.menu-item .nav-sublist-dropdown .nav-sublist li > a, .main-nav .menu > li.menu-item .nav-sublist-dropdown .nav-sublist li > a,
