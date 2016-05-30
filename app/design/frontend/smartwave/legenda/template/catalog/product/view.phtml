@@ -51,7 +51,6 @@
         
         <div class="product-shop col-sm-4">
 
-
             <?php if ($this->canEmailToFriend()): ?>
                 <p class="email-friend"><a href="<?php echo $this->helper('catalog/product')->getEmailToFriendUrl($_product) ?>"><?php echo $this->__('Email to a Friend') ?></a></p>
             <?php endif; ?>
@@ -64,9 +63,11 @@
                     <div class="std"><?php echo $_helper->productAttribute($_product, nl2br($_product->getShortDescription()), 'short_description') ?></div>
                 </div>
             <?php endif;?>
+<?php echo $this->getChildHtml('smartwave_sharetool'); ?>
             <?php echo $this->getChildHtml('product_type_data') ?>
             <?php echo $this->getTierPriceHtml() ?>            
             <?php echo $this->getChildHtml('extrahint') ?>
+<a href="#" id="myTooltip" style="display:block !important;" title="Add prints to your shopping cart. Select Purchase in Nepal by Cash/Check as Payment Method. You can pay directly at Photo Circle, Arun Thapa Chowk, Jhamsikhel, Lalitpur, Phone: +977 1 5013501. Your print will be ready within 7 working days after your payment is received. Please write to fundraiser@photoktm.com if you have specific requests. We will email or call you to arrange delivery. We are happy to offer free delivery within the Kathmandu valley!">*Buying or shipping to/from Nepal?</a>
             <?php if (!$this->hasOptions()):?>
                 <div class="add-to-box">
                     <?php if($_product->isSaleable()): ?>
@@ -89,7 +90,6 @@
             <?php if ($_product->isSaleable() && $this->hasOptions()):?>
                 <?php echo $this->getChildChildHtml('container2', '', true, true) ?>
             <?php endif;?>
-            <?php echo $this->getChildHtml('smartwave_sharetool'); ?>
         </div>
             </form>
     <?php if(Mage::getStoreConfig('ajaxcart/addtocart/enableproduct')): ?>
@@ -211,3 +211,12 @@
         <?php //echo $this->getChildHtml('product_additional_data') ?>        
     </div>
 </div>
+<script type="text/javascript">
+jQuery( document ).ready(function(){
+   jQuery("#myTooltip").tooltip();
+   jQuery('#myTooltip').on('hidden.bs.tooltip', function () {
+      jQuery('#myTooltip').show();
+   });
+});
+</script>
+

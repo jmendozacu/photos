@@ -37,4 +37,5 @@
 }
 .viewmore a {color:#FFF !important;}
 .header-container {background-color:#FFF !important;}
-.home-slider { min-height: 500px; }
+.home-slider { min-height: 500px; display:none;}
+.cms-home .home-slider {display:block;}
